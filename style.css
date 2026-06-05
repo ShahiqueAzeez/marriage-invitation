@@ -54,12 +54,47 @@ width:50%;
 }
 
 .invite-text{
-font-size:26px;
+font-size:20px;
 line-height:1.6;
 }
 
 .invite-text span{
 font-weight:bold;
+}
+
+.parents-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    text-align:center;
+}
+
+.parent-block{
+    min-width:260px;
+}
+
+.parent-name{
+    font-size:18px;
+    font-weight:bold;
+    color:#5b3a1f;
+}
+
+.parent-role{
+    font-size:18px;
+    font-weight:400;
+    color:#5b3a1f;
+}
+
+.qualification{
+    font-weight:400;
+}
+
+.ampersand{
+    font-size:42px;
+    font-weight:bold;
+    color:#5b3a1f;
+    margin:0 10px;
 }
 
 .bride,
@@ -89,7 +124,7 @@ font-style:italic;
 margin-top:8px;
 font-size:18px;
 line-height:1.4;
-font-weight:1000;
+font-weight:1200;
 color:#6f5b4a;
 } 
 
