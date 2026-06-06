@@ -311,3 +311,6 @@ rotate(360deg);
     margin-left:15px;
     margin-right:15px;
 }
+.container{
+    display:none;
+}
