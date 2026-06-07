@@ -1,316 +1,48 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:'Cinzel',serif;
-background:url('background.jpg');
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:#3d2a16;
-min-height:100vh;
-overflow-x:hidden;
+    overflow-x:hidden;
 }
 
-.overlay{
-position:fixed;
-inset:0;
-background:rgba(255,248,240,.72);
-z-index:-1;
+.invitation{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:30px;
-text-align:center;
-}
+.petal{
+    position:fixed;
+    top:-100px;
+    z-index:999;
+    pointer-events:none;
 
-.arabic{
-font-size:52px;
-margin-top:20px;
-opacity:0;
-animation:fadeArabic 3s ease forwards;
-}
-
-.translation{
-margin-top:10px;
-font-size:20px;
-}
-
-.invite-row{
-display:flex;
-justify-content:space-between;
-gap:20px;
-margin-top:15px;
-}
-
-.parents,
-.invite-text{
-width:50%;
-}
-
-.invite-text{
-font-size:20px;
-line-height:1.6;
-}
-
-.invite-text span{
-font-weight:bold;
-}
-
-.parents-row{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
-    text-align:center;
-}
-
-.parent-block{
-    min-width:260px;
-}
-
-.parent-name{
-    font-size:18px;
-    font-weight:bold;
-    color:#5b3a1f;
-}
-
-.parent-role{
-    font-size:18px;
-    font-weight:400;
-    color:#5b3a1f;
-}
-
-.qualification{
-    font-weight:400;
-}
-
-.ampersand{
-    font-size:42px;
-    font-weight:bold;
-    color:#5b3a1f;
-    margin:0 10px;
-}
-
-.bride,
-.groom{
-    font-family: 'Italianno', cursive;
-    font-size: 90px;
-    color: #5b3a1f;
-    line-height: 0.75;
-    font-weight: normal;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.08);
-}
-
-.bride span,
-.groom span{
-font-family:serif;
-font-size:24px;
-margin-left:10px;
-}
-
-.weds{
-font-size:30px;
-margin:5px;
-font-style:italic;
-}
-
-.groom-parents{
-margin-top:8px;
-font-size:18px;
-line-height:1.4;
-font-weight:1200;
-color:#6f5b4a;
-} 
-
-.join{
-margin-top:15px;
-font-size:26px;
-line-height:1.35;
-}
-
-.date-box{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:20px;
-margin-top:12px;
-}
-
-.date{
-font-size:90px;
-font-weight:bold;
-color:#7a4f17;
-}
-
-.time{
-font-size:24px;
-margin-top:10px;
-}
-
-.venue-row{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:20px;
-margin-top:15px;
-}
-
-.venue{
-font-size:17px;
-line-height:1.4;
-}
-
-.qr img{
-width:100px;
-border:3px solid #b48a44;
-border-radius:10px;
-}
-
-.compliments{
-margin-top:20px;
-font-size:24px;
-font-style:italic;
-padding-bottom:40px;
-}
-
-@keyframes fadeArabic{
-0%{
-opacity:0;
-transform:translateY(-40px);
-}
-100%{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.particle{
-position:fixed;
-top:-20px;
-color:#d4af37;
-animation:fall linear infinite;
-pointer-events:none;
-}
-
-@keyframes fall{
-0%{
-transform:translateY(-50px);
-}
-100%{
-transform:translateY(120vh);
-}
-}
-
-@media(max-width:768px){
-
-.invite-row,
-.venue-row{
-flex-direction:column;
-}
-
-.parents,
-.invite-text{
-width:100%;
-}
-
-.bride,
-.groom{
-font-size:55px;
-}
-
-.arabic{
-font-size:34px;
-}
-
-.date{
-font-size:70px;
-}
-
-}
-@keyframes fall {
-
-0%{
-transform:
-translateY(-50px)
-rotate(0deg);
-}
-
-100%{
-transform:
-translateY(110vh)
-translateX(100px)
-rotate(360deg);
-}
-
-}.petal{
-position:fixed;
-top:-100px;
-pointer-events:none;
-z-index:999;
-
-animation-name:fallPetal;
-animation-timing-function:linear;
+    animation-name:fallPetal;
+    animation-timing-function:linear;
 }
 
 @keyframes fallPetal{
 
-0%{
-transform:
-translateY(-100px)
-translateX(0px)
-rotate(0deg);
-}
+    0%{
+        transform:
+        translateY(-100px)
+        translateX(0px)
+        rotate(0deg);
+    }
 
-25%{
-transform:
-translateY(25vh)
-translateX(-40px)
-rotate(90deg);
-}
-
-50%{
-transform:
-translateY(50vh)
-translateX(30px)
-rotate(180deg);
-}
-
-75%{
-transform:
-translateY(75vh)
-translateX(-25px)
-rotate(270deg);
-}
-
-100%{
-transform:
-translateY(120vh)
-translateX(40px)
-rotate(360deg);
-}
+    100%{
+        transform:
+        translateY(110vh)
+        translateX(100px)
+        rotate(360deg);
+    }
 
 }
-.parents-row{
-    text-align:center;
-    font-size:20px;
-    font-weight:600;
-    color:#5b3a1f;
-    margin-top:10px;
-    margin-bottom:12px;
-    line-height:1.25;
-}
-
-.amp{
-    font-size:35px;
-    margin-left:15px;
-    margin-right:15px;
-}
-.container{
-    display:none;
+body{
+    margin:0;
+    overflow-x:hidden;
+    background:#f5efe8;
 }
