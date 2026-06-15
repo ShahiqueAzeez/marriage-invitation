@@ -8,10 +8,12 @@ body{
     overflow-x:hidden;
 }
 
-.invitation{
-    width:100%;
-    height:auto;
-    display:block;
+.invitation {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .petal{
